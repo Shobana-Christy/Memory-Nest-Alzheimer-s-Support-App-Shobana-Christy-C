@@ -10,7 +10,10 @@ const Header = () => {
                 <ul className="menu">
                     <li><Link to="/contactus" className="link">Contact Us</Link> |</li>
                     <li><Link to="/aboutus" className="link">About Us</Link> |</li>
-                    <li>Logout</li>
+                    {
+                        !(window.location.pathname == "/" || window.location.pathname =="") &&
+                        <li><Link to="/" className="link">Logout</Link></li>
+                    }
                 </ul>
             </nav>
 
