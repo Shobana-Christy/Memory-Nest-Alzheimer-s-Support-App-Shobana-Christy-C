@@ -133,7 +133,6 @@ const ContactUsPage = () => {
                     <td>
                         <Button id={"submit-conntact-form"} type="submit"
                             label='Submit' onClick={handleSubmit}>
-
                         </Button>
                     </td>
                 </tr>
