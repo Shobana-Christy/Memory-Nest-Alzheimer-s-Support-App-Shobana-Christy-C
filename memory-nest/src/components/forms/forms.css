@@ -1,0 +1,26 @@
+/* Form items */
+.form-items,
+.first-name-item,
+.last-name-item,
+.email-item {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
