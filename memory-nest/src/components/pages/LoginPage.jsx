@@ -1,3 +1,4 @@
+import Button from "../common/Button";
 
 const LoginPage = () => {
 
@@ -7,7 +8,7 @@ const LoginPage = () => {
                 <div className="login-form">
                     <input type="text" name="user-name" placeholder="User Name" />
                     <input type="password" name="password" placeholder="Password" />
-                    <button type="submit" name="submit">Submit</button>
+                    <Button type="submit" name="submit" label={"Submit"}></Button>
                 </div>
             </form>
         </div>
