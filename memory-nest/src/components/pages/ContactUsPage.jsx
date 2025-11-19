@@ -66,7 +66,7 @@ const ContactUsPage = () => {
                 <h3>Contact Us</h3>
 
             </div>
-            <table>
+            <table className='contactus-form-table'>
                 <tr>
                     <td>
                         <FormItem>
