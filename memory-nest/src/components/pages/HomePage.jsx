@@ -3,26 +3,37 @@ import './pages.css';
 import Tile from "../common/Tile";
 
 const HomePage = () => {
+
+    const pages = [
+        {
+            name: "Reminders",
+            path: "/reminders"
+        },
+        {
+            name: "Memory Spot",
+            path: "/memoryspot"
+        },
+        {
+            name: "Engagement Center",
+            path: "/engagementcenter"
+        },
+    ];
+
     return (
         <main>
+             <h3 className="home-intro">
+                Every memory matters, and we are here to support you with reminders and activities that brighten each day.
+            </h3>
             <div id="main-content-home">
-                <div className="reminders">
-                    <Link to='/reminders' className="link">
-                        <Tile text="Reminders" />
-                    </Link>
-                </div>
-
-                <div className="memoryspot">
-                    <Link to='/memoryspot' className="link">
-                        <Tile text="Memory Spot" />
-                    </Link>
-                </div>
-
-                <div className="memoryspot">
-                    <Link to='/engagementcenter' className="link">
-                        <Tile text="Engagement Center" />
-                    </Link>
-                </div>
+                {
+                    pages.map(page => (
+                        <div className="page-box">
+                            <Link to={page.path} className="link">
+                                <Tile text={page.name} />
+                            </Link>
+                        </div>
+                    ))
+                }
             </div>
         </main>
     )
